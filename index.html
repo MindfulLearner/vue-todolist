@@ -12,6 +12,7 @@
             <div>
                 <input v-model = "testo" @keyup.enter="aggiungi()" type="text" name="" value="">
                 <button @click = "aggiungi()"  type="button">swag aggiungi</button>
+                <!-- V-bind o if-bind ????-->
                 <div class="swag" v-bind:class = "{linea: !todo[index].done}" v-for = "(dato, index) in todo">
                     <div>
                         {{ dato.testo }} 
@@ -22,10 +23,6 @@
                 </div> 
             </div>
         </div>
-
-
-
-
 
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>   
         <script src="data.js"> </script>
