@@ -9,13 +9,16 @@
     <body>
         <div id="apper">
 
-            <div >
-                <div class="swag" v-bind:class = "{linea : todo.done}" v-for = "(dato, index) in todo">
+            <div>
+                <input v-model = "testo" @keyup.enter="aggiungi()" type="text" name="" value="">
+                <button @click = "aggiungi()"  type="button">swag aggiungi</button>
+                <div class="swag" v-bind:class = "{linea: !todo[index].done}" v-for = "(dato, index) in todo">
                     <div>
                         {{ dato.testo }} 
                         {{ dato.done }} 
                     </div>
-                <button @click = "fatto(index)" type="button"></button>
+                <button @click = "fatto(index)" type="button">fatto</button>
+                <button @click = "rimuovi(index)" type="button">rimuovi</button>
                 </div> 
             </div>
         </div>
