@@ -1,0 +1,21 @@
+/* swag*/
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.swag {
+    display: flex;
+}
+
+.linea {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+

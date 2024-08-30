@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="apper">
+
+            <div >
+                <div class="swag" v-bind:class = "{linea : todo.done}" v-for = "(dato, index) in todo">
+                    <div>
+                        {{ dato.testo }} 
+                        {{ dato.done }} 
+                    </div>
+                <button @click = "fatto(index)" type="button"></button>
+                </div> 
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>   
+        <script src="data.js"> </script>
+        <script src = "./script.js"> </script>
+
+    </body>
+</html>
