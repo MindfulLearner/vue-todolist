@@ -19,10 +19,8 @@
                     </div>
                 <button @click = "fatto(index)" type="button">fatto</button>
                 <button @click = "rimuovi(index)" type="button">rimuovi</button>
-                <div class = "attivo">
-                    <button @click = "fatto(index)" type="button">fatto</button>
-                    <button @click = "rimuovi(index)" type="button">rimuovi</button>
-                </div>
+                <button @click = "fatto(index)" type="button">fatto</button>
+                <button @click = "rimuovi(index)" type="button">rimuovi</button>
                 </div> 
             </div>
         </div>
