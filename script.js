@@ -27,7 +27,6 @@ createApp(
                 if (this.testo.trim()) {
                     // pushing new text
                     this.todo.push({testo: this.testo, done: this.done});
-                    console.log(this.todo);
                     //rimuoviamo spazi per scrivere ancora
                     this.testo = '';
                 }
